@@ -483,3 +483,83 @@ font-weight: bold;
 
 
 
+@media (max-width:710px){
+	.container{
+		width: 86%;
+		/* margin:0 auto; */
+		display: flex;
+		height: 100%;
+	}
+	.container-fluid .navbar{
+		font-size: small;
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+		width: 100%;
+		padding-top: 80px;
+		/* padding-right: 100px; */
+	}
+	.container-fluid .navbar .listItems{
+		font-size: small;
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+		text-decoration: none;
+	}
+	.container-fluid .navbar .listItems li a{
+		font-size: large;
+	}
+	.container-fluid .homeContent h1{
+		font-size: x-large;
+		margin: auto 10px;
+	}
+	.container-fluid .homeContent .para{
+		width: 100%;
+	}
+	.container-fluid .homeContent button{
+		font-size: x-small;
+	}
+ 
+	/* 2nd section start hr */
+   
+	#about-sec .main .context .about-para{
+	}
+	#about-sec .main .context .about-para .fa-facebook{
+		font-size: xx-large;
+	}
+
+	/* our services section start hr */
+	#services-sec .title-content{
+		font-size: small;
+		width: 100%;
+	}
+	#services-sec .main-outer {
+		font-size: small;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+
+		
+	}
+
+		/* freelancing section start here */
+
+	#freelancing .container-2 h2{
+		font-size: larger;
+	}
+	#freelancing .btn-2{
+		font-size: x-small;
+	}
+
+	/* client section start here */
+
+	#client-sec{
+		font-size: small;
+	}
+	#client-sec .client p{
+		width: 70%;
+	}
+	#client-sec .para-2 p{
+		width: 70%;
+	}
+}
