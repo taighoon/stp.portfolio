@@ -598,7 +598,7 @@ font-weight: bold;
 		width: 80%;
 	}
 	#section-work .container-3 .work-nav ul li a{
-		font-size: small;
+		font-size: x-small;
 	}
 
 	/* blog section start here */
@@ -630,6 +630,7 @@ font-weight: bold;
 	}
 	#contact-us .container-5 .contact-icons{
 		font-size: small;
+		margin: 0px auto;
 	}
 	#contact-us .container-5 .form-btn{
 		padding-right:20px ;
@@ -641,7 +642,7 @@ font-weight: bold;
 	/* footer section start here */
 
 	#footer .container-6 .icon-2{
-	padding-left: 150px;
+	padding-left: 100px;
 	}
 	#footer .container-6 .auther{
 		padding-bottom: 50px;
