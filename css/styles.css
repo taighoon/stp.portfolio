@@ -5,6 +5,7 @@
 }
 .container{
 	width: 86%;
+	height: 100vh;
 	margin:0 auto;
 }
 .alpha{
@@ -45,6 +46,10 @@
 	padding-right: 15px;
 	font-size: 1.2rem;
 	text-decoration: none;
+}
+.container-fluid .navbar .listItems li :hover{
+	background-color: red;
+
 }
 .container-fluid .navbar .logo,.listItems{
 	color: white;
@@ -92,10 +97,12 @@
 
 /* section 2 start here */
 
+#about-sec{
+	height: 100%;
+}
 .main{
 	padding-top: 7%;
 	width: 80%;
-	height: 70%;
 	padding: 10%;
 	/* margin: auto; */
 	display: flex;
@@ -109,6 +116,7 @@
 .context h2{
 	text-transform: capitalize;
 	padding-bottom: 10px;
+	padding-top: 10px;
 }
 .content-span{
 color: red;
@@ -222,11 +230,7 @@ i{
     top: 20%;
     right: 0%;
 }
-@media(max-width: 768px) {
-    .side-box {
-        display: none;
-    }
-}
+
 
 /* 3rd section ends here */
 
@@ -305,7 +309,7 @@ text-transform: capitalize;
 font-weight: bold;
 }
 
-
+/* work section here */
 
 
 #section-work .container-3 .content-3{
@@ -397,11 +401,13 @@ font-weight: bold;
 	margin: 10px auto;
 	padding: 10px;
 	width: 50%;
+	background-color: white;
 }
 #blog-sec .container-4 .blog-card .blog-content p{
 	width: 100%;
 	text-align: center;
 	margin: 0 auto;
+	
 }
 
 
@@ -481,14 +487,13 @@ font-weight: bold;
 	text-align: center;
 }
 
-
+     /* media quree start here */
 
 @media (max-width:710px){
 	.container{
 		width: 86%;
-		/* margin:0 auto; */
 		display: flex;
-		height: 100%;
+		
 	}
 	.container-fluid .navbar{
 		font-size: small;
@@ -499,22 +504,33 @@ font-weight: bold;
 		padding-top: 80px;
 		/* padding-right: 100px; */
 	}
+	.container-fluid .navbar .logo{
+		width: auto;
+		padding-left: 20px;
+		font-size: larger;
+	}
 	.container-fluid .navbar .listItems{
 		font-size: small;
 		display: flex;
 		flex-direction: column;
 		flex-wrap: wrap;
 		text-decoration: none;
+		margin: 2px auto;
 	}
 	.container-fluid .navbar .listItems li a{
 		font-size: large;
+		border: 1px solid whitesmoke;
+		margin-top: 20px;
+		display: flex;
+		justify-content: space-evenly;
 	}
 	.container-fluid .homeContent h1{
 		font-size: x-large;
 		margin: auto 10px;
+		padding-top: 70px;
 	}
 	.container-fluid .homeContent .para{
-		width: 100%;
+		width: 90%;
 	}
 	.container-fluid .homeContent button{
 		font-size: x-small;
@@ -522,10 +538,21 @@ font-weight: bold;
  
 	/* 2nd section start hr */
    
-	#about-sec .main .context .about-para{
+	#about-sec{
+		height: 10%;
 	}
-	#about-sec .main .context .about-para .fa-facebook{
-		font-size: xx-large;
+	#about-sec .main {
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+		height: 0%;
+	}
+	#about-sec .main .context .about-para {
+		font-size: ;
+		width: 8%;
+	}
+	#about-sec .main img{
+		width: 8%;
 	}
 
 	/* our services section start hr */
@@ -537,9 +564,7 @@ font-weight: bold;
 		font-size: small;
 		display: flex;
 		flex-direction: row;
-		flex-wrap: wrap;
-
-		
+		flex-wrap: wrap;	
 	}
 
 		/* freelancing section start here */
@@ -562,4 +587,66 @@ font-weight: bold;
 	#client-sec .para-2 p{
 		width: 70%;
 	}
+
+	/* work section start here */
+
+	#section-work .container-3 .content-3 h2{
+		font-size: x-large;
+	}
+	#section-work .container-3 .content-3 {
+		font-size: small;
+		width: 80%;
+	}
+	#section-work .container-3 .work-nav ul li a{
+		font-size: small;
+	}
+
+	/* blog section start here */
+
+	#blog-sec .container-4 .blog-head h2{
+		font-size: xx-large;
+	}
+	#blog-sec .container-4 .blog-head p{
+		width: 80%;
+	}
+	#blog-sec .container-4 .blog-card{
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: column;
+	}
+
+
+	/* contact us section starts here */
+
+	#contact-us{
+		height: 100vh;
+	}
+	#contact-us .container-5 .contact-head h2{
+		font-size: x-large;
+	}
+	#contact-us .container-5 .contact-head p{
+		font-size: large;
+		width: 80%;
+	}
+	#contact-us .container-5 .contact-icons{
+		font-size: small;
+	}
+	#contact-us .container-5 .form-btn{
+		padding-right:20px ;
+	}
+	#contact-us .container-5 .form .name{
+		width: 38%;
+	}
+
+	/* footer section start here */
+
+	#footer .container-6 .icon-2{
+	padding-left: 150px;
+	}
+	#footer .container-6 .auther{
+		padding-bottom: 50px;
+		padding-left:0px;
+		width: 100%;
+	}
+
 }
